@@ -1,0 +1,67 @@
+:root {
+  --font-primary: 'Roboto', sans-serif;
+
+  --color-dark-bg: #1F2937;   /* Dark background (hero + footer) */
+  --color-light-text: #F9FAF8;/* Main light text */
+  --color-muted-text: #E5E7EB;/* Secondary / muted text */
+  --color-accent: #3882F6;    /* Button / call-to-action */
+  --color-quote-bg: #E5E7EB;  /* Quote section background */
+
+  --hero-title-size: 48px;
+  --hero-title-weight: 900;
+  --hero-title-color: var(--color-light-text);
+
+  --hero-secondary-size: 18px;
+  --hero-secondary-color: var(--color-muted-text);
+
+  --hero-logo-size: 24px;
+  --hero-logo-color: var(--color-light-text);
+
+  --info-header-size: 36px;
+  --info-header-weight: 900;
+  --info-header-color: var(--color-dark-bg);
+
+  --quote-text-size: 36px;
+  --quote-text-weight: 300;
+  --quote-text-color: var(--color-dark-bg);
+}
+
+body {
+    margin: 0px;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-dark-bg);
+}
+
+header ul, a {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    color: var(--color-light-text);
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding: 16px;
+    color: var(--color-light-text) ;
+    background-color: var(--color-dark-bg);
+    font-family: var(--font-primary);
+    font-size: 12px;
+}
