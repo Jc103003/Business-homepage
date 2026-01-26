@@ -25,36 +25,63 @@
   --quote-text-weight: 300;
   --quote-text-color: var(--color-dark-bg);
 }
+/* Global */
+* {
+    font-family: var(--font-primary);
 
+    /* DEBUG */
+    /* outline: 2px solid red; */
+}
 body {
     margin: 0px;
 }
+
 /* Header */
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 96px;
     align-items: center;
     background-color: var(--color-dark-bg);
 }
 
-header ul, a {
+header .header-links ul {
     list-style: none;
     display: flex;
-    gap: 12px;
-    color: var(--color-light-text);
+    font-size: 18px;
+    gap: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header a {
+    color: var(--color-muted-text);
     text-decoration: none;
     transition: all 0.1s ease;
 }
-
 a:hover {
-    transform: scale(1.1);
-    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+    color: var(--color-accent);
+}
+
+/* Hero */
+.Hero {
+    background-color: var(--color-dark-bg);
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 64px;
+    gap: 24px;
+}
+
+.Hero h1 {
+    margin: 0px;
+    color: var(--hero-title-color);
 }
 
 
-
 /* Footer */
-
 footer {
     display: flex;
     justify-content: center;
