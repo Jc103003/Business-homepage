@@ -90,7 +90,7 @@ a:hover {
 }
 
 .Hero button {
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: var(--color-accent);
     color: var(--color-light-text);
     padding: 10px 32px;
@@ -120,12 +120,13 @@ a:hover {
 
 .Card-grid {
     display: flex;
-    justify-content: space-evenly;
-    padding: 12px 250px 64px 250px;
+    justify-content: center;
+    padding: 12px 75px 64px 75px;
+    gap: 40px;
 }
 .Card-grid .image-box {
-    width: 160px;
-    height: 160px;
+    width: 220px;
+    height: 220px;
 
     border-radius: 12px;
     overflow: hidden;
@@ -159,18 +160,50 @@ a:hover {
     padding: 32px;
     display: flex;
     justify-content: center;
-    padding: 64px 250px;
+    padding: 64px 110px;
     flex-direction: column;
 }
 .Quote p {
     color: gray;
     font-size: var(--quote-text-size);
-    padding: 0px 37px 0px 80px;
 }
 
 .Quote h3 {
     align-self: flex-end;
-    margin: 0px 40px 0px 0px;
+    padding: 0px 100px;
+}
+
+/* CTA */
+.CTA {
+    padding: 100px 96px;
+}
+
+.CTA .box {
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 40px 100px;
+    color: var(--color-light-text);
+    border-radius: 12px;
+}
+
+.CTA .box p {
+    margin: 0px;
+    padding-top: 5px;
+    color: var(--color-muted-text);
+}
+
+.CTA .box h3 {
+    margin: 0px;
+}
+
+.CTA .right button {
+    background: none;
+    border-color: var(--color-light-text);
+    color: var(--color-light-text);
+    padding: 8px 32px;
+    border-radius: 8px;
 }
 
 /* Footer */
