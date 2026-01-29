@@ -24,6 +24,9 @@
   --quote-text-size: 36px;
   --quote-text-weight: 300;
   --quote-text-color: var(--color-dark-bg);
+
+  --Abox-shadow: 10px 16px 50px 4px rgba(0, 0, 0, 0.56);
+
 }
 /* Global */
 * {
@@ -54,10 +57,10 @@ header .header-links ul {
     padding: 0px;
 }
 
-header a {
+header ul li a {
     color: var(--color-muted-text);
     text-decoration: none;
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
 }
 a:hover {
     transform: scale(1.2);
@@ -70,8 +73,8 @@ a:hover {
     margin: 0px;
     align-items: center;
     display: flex;
-    justify-content: space-around;
-    padding: 64px;
+    justify-content: space-between;
+    padding: 32px 96px 64px;
     gap: 24px;
 }
 
@@ -79,6 +82,72 @@ a:hover {
     margin: 0px;
     color: var(--hero-title-color);
 }
+
+.Hero p {
+    margin: 0px;
+    color: var(--color-muted-text);
+    margin: 12px 0px;
+}
+
+.Hero button {
+    border-radius: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-light-text);
+    padding: 10px 32px;
+}
+
+.Hero img {
+    box-shadow:var(--Abox-shadow);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.Hero img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Information */
+.Info {
+    text-align: center;
+    padding: 24px;
+}
+
+.Card-grid {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 250px 64px;
+}
+.Card-grid .image-box {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.Card-grid .image-box:hover {
+    box-shadow: var(--Abox-shadow);
+    transform: scale(1.1);
+}
+
+.Card-grid .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    color: grey;
+}
+/* Quote */
 
 
 /* Footer */
