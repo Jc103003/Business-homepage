@@ -94,6 +94,11 @@ a:hover {
     background-color: var(--color-accent);
     color: var(--color-light-text);
     padding: 10px 32px;
+    transition: all 0.3s ease;
+}
+
+.Hero button:hover {
+    transform: scale(1.1);
 }
 
 .Hero img {
@@ -116,7 +121,7 @@ a:hover {
 .Card-grid {
     display: flex;
     justify-content: space-evenly;
-    padding: 12px 250px 64px;
+    padding: 12px 250px 64px 250px;
 }
 .Card-grid .image-box {
     width: 160px;
@@ -147,8 +152,26 @@ a:hover {
 .card p {
     color: grey;
 }
-/* Quote */
 
+/* Quote */
+.Quote {
+    background-color: var(--color-quote-bg);
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    padding: 64px 250px;
+    flex-direction: column;
+}
+.Quote p {
+    color: gray;
+    font-size: var(--quote-text-size);
+    padding: 0px 37px 0px 80px;
+}
+
+.Quote h3 {
+    align-self: flex-end;
+    margin: 0px 40px 0px 0px;
+}
 
 /* Footer */
 footer {
